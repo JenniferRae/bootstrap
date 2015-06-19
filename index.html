@@ -1,82 +1,108 @@
 	<!DOCTYPE html>
 <html>
 <head>
-	<title>Mobile First</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<title>Mobile First</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
+	<div class="container">
+		<header id="top">
+		<!-- <img src="img/telescope.svg" alt="Telescope">  -->
+			<div class="">
+				<h1 id="title">Astronomy for Kids</h1>
+			</div>
+		</header>
 
-	<header id="top">
-	<!-- <img src="img/telescope.svg" alt="Telescope">  -->
-	<h1 id="title">Astronomy for Kids</h1>
-	</header>
-
-
-	<nav id="menu" class="hidden">
-		<ul>
-			<li><a href="#one">Stars</a></li>
-			<li><a href="#two">Sun</a></li>
-			<li><a href="#three">Eclipse of the Sun</a></li>
-		</ul>
-	</nav>
-
-	<section class="articles">
-		<article id="one">
-			<header>
-				<h2>Stars</h2>
-			</header>
-
-			<img src="img/stars.jpg" alt="Stars" height="75" width="75">
-			<body>
-				<p>The earliest stars probably formed only a few hundred thousand years after the Big Bang that started the universe - maybe about 13.5 billion years ago. Stars are the oldest big objects in the Universe. Stars formed big clumps of hydrogen and a few helium atoms, the simplest kinds of atoms, and pretty much the only kinds that existed before there were stars. Once enough hydrogen and helium atoms clumped together, though, they began to have tremendous gravity.</p>
-				<p>This gravity pulled the hydrogen atoms closer and closer together in the middle of the star. All those electrons in one place made the star hotter and hotter - about 100 million degrees celsius. As the atoms got closer together, they bumped into each other more often. When this happened, sometimes the two atoms would join together into one atom, and two hydrogen atoms would turn into one helium atom. We call this process "nuclear fusion". Nuclear fusion releases a lot of extra electrons, and these electrons go shooting off into space in all directions. It's those zillions of electrons that you see, that make the stars shine - and that's what makes our Sun shine, too. The electrons give off all wavelengths of energy, so they give off not only light, but also heat....</p>
-			</body>
-			<footer>
-				<a href="#top">Top</a>
-			</footer>
-		</article>
-		<article id="two">
-			<header>
-				<h2>Sun</h2>
-			</header>
-			<img src="img/sun.jpg" alt="Sun" height="75" width="75">
-			<body>
-				<p>The Sun is a star, just like billions of other stars in the universe. Our Sun probably formed a little more than four and a half billion years ago, just a little bit before the planets formed around it. It's not one of the older stars in the Universe. Probably some of the earliest stars went supernova, and then new stars formed out of those nebulae, and then the new stars went supernova, and the Sun formed out of one of these new nebulae. So you could say that the Sun is like the grandchild of the first stars.</p>
-				<p>Like other stars, the Sun is mostly made of hydrogen atoms. All stars start out making energy by changing hydrogen atoms into helium atoms. At the surface, the Sun is almost 10,000 degrees Fahrenheit (more than 5000 degrees Celsius), but it is much hotter in the middle of the Sun, about 25 million degrees Fahrenheit (14 million degrees Celsius). The Sun is one of the brighter stars in the Universe, because many other stars are older and have already turned into red dwarfs....</p>
-			</body>
-			<footer>
-				<a href="#top">Top</a>
-			</footer>
-		</article>
-		<article id="three">
-			<header>
-				<h2>Eclipse of the Sun</h2>
-			</header>
-			<img src="img/eclipse.jpg" alt="Eclipse" height="75" width="75">
-			<body>
-				<p>An eclipse of the sun happens whenever the moon gets between the Earth and the sun, so that the moon blocks your view of the sun. Depending on where you are standing on the Earth, you might see the sun completely blocked (as in these pictures) or only partly blocked, or you might not see it at all.</p>
-				<p>The moon passes between the Earth and the sun once every month, at the new moon, but most of the time the moon is either too high up or too low to block our view of the sun. About twice a year, the moon does get in the way of the sun, causing an eclipse. But even then, you can only see the eclipse from some places on Earth; the area where you can see a total eclipse is about 100 miles wide. Eclipses move around the earth, so every year people in different places see them....</p>
-			</body>
-			<footer>
-				<a href="#top">Top</a>
-			</footer>
-		</article>
-	</section>
-
-	<footer id="bottom">
-	<input type="image" src="img/gi.png" alt="nav list" height="50" width="50" id="list">
-	</footer>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<nav id="menu">
+								<!-- SELF NOTE: HAD TO DELETE  class="hidden"-->
+					<ul class="list-group">
+						<li class="list-group-item"><a href="#one">Stars</a></li>
+						<li class="list-group-item"><a href="#two">Sun</a></li>
+						<li class="list-group-item"><a href="#three">Eclipse of the Sun</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 
 
-	<script src="app.js" type="text/javascript" charset="utf-8"></script>
+		<section class="articles">
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<article id="one">
+						<header>
+							<h2>Stars</h2>
+						</header>
+
+						<img src="img/stars.jpg" alt="Stars" height="75" width="75">
+						<body>
+							<p>The earliest stars probably formed only a few hundred thousand years after the Big Bang that started the universe - maybe about 13.5 billion years ago. Stars are the oldest big objects in the Universe. Stars formed big clumps of hydrogen and a few helium atoms, the simplest kinds of atoms, and pretty much the only kinds that existed before there were stars. Once enough hydrogen and helium atoms clumped together, though, they began to have tremendous gravity.</p>
+							<p>This gravity pulled the hydrogen atoms closer and closer together in the middle of the star. All those electrons in one place made the star hotter and hotter - about 100 million degrees celsius. As the atoms got closer together, they bumped into each other more often. When this happened, sometimes the two atoms would join together into one atom, and two hydrogen atoms would turn into one helium atom. We call this process "nuclear fusion". Nuclear fusion releases a lot of extra electrons, and these electrons go shooting off into space in all directions. It's those zillions of electrons that you see, that make the stars shine - and that's what makes our Sun shine, too. The electrons give off all wavelengths of energy, so they give off not only light, but also heat....</p>
+						</body>
+						<footer>
+							<a href="#top">Top</a>
+						</footer>
+						
+					</article>
+				</div>
+
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<article id="two">
+						<header>
+							<h2>Sun</h2>
+						</header>
+						<img src="img/sun.jpg" alt="Sun" height="75" width="75">
+						<body>
+							<p>The Sun is a star, just like billions of other stars in the universe. Our Sun probably formed a little more than four and a half billion years ago, just a little bit before the planets formed around it. It's not one of the older stars in the Universe. Probably some of the earliest stars went supernova, and then new stars formed out of those nebulae, and then the new stars went supernova, and the Sun formed out of one of these new nebulae. So you could say that the Sun is like the grandchild of the first stars.</p>
+							<p>Like other stars, the Sun is mostly made of hydrogen atoms. All stars start out making energy by changing hydrogen atoms into helium atoms. At the surface, the Sun is almost 10,000 degrees Fahrenheit (more than 5000 degrees Celsius), but it is much hotter in the middle of the Sun, about 25 million degrees Fahrenheit (14 million degrees Celsius). The Sun is one of the brighter stars in the Universe, because many other stars are older and have already turned into red dwarfs....</p>
+						</body>
+						<footer>
+							<a href="#top">Top</a>
+						</footer>
+					</article>
+				</div>
+
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<article id="three">
+						<header>
+							<h2>Eclipse of the Sun</h2>
+						</header>
+						<img src="img/eclipse.jpg" alt="Eclipse" height="75" width="75">
+						<body>
+							<p>An eclipse of the sun happens whenever the moon gets between the Earth and the sun, so that the moon blocks your view of the sun. Depending on where you are standing on the Earth, you might see the sun completely blocked (as in these pictures) or only partly blocked, or you might not see it at all.</p>
+							<p>The moon passes between the Earth and the sun once every month, at the new moon, but most of the time the moon is either too high up or too low to block our view of the sun. About twice a year, the moon does get in the way of the sun, causing an eclipse. But even then, you can only see the eclipse from some places on Earth; the area where you can see a total eclipse is about 100 miles wide. Eclipses move around the earth, so every year people in different places see them....</p>
+						</body>
+						<footer>
+							<a href="#top">Top</a>
+						</footer>
+					</article>
+				</div>
+
+
+			</div>
+		</section>
+
+		<footer id="bottom">
+			<input type="image" src="img/gi.png" alt="nav list" height="50" width="50" id="list">
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+		<script src="app.js" type="text/javascript" charset="utf-8"></script>
+	
+	</div>
 </body>
-
 </html>
