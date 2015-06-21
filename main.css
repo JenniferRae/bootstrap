@@ -63,15 +63,16 @@ body {
 /*********CAROUSEL OF IMAGES*********/
 
 @media screen and (max-width: 768px) {
-.container-carousel {
+.container-carousel, .articleImages {
   	display: none;
 	}
 }
 
-.carousel-inner {
-	width: 100%;
-	height: 20em;
+.hide {
+	display: none;
 }
 
-
+.show {
+	display: inline;
+}
 

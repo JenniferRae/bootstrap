@@ -31,9 +31,9 @@
 				<div class="collapse navbar-collapse" id="myNavbar">
 						<!-- SELF NOTE: HAD TO DELETE  class="hidden"-->
 					<ul class="nav navbar-nav">
-						<li><a href="#one">Stars</a></li>
-						<li><a href="#two">Sun</a></li>
-						<li><a href="#three">Eclipse of the Sun</a></li>
+						<li><a href="#one" id="stars">Stars</a></li>
+						<li><a href="#two" id="sun">Sun</a></li>
+						<li><a href="#three" id="eclipse">Eclipse of the Sun</a></li>
 					</ul>
 
 
@@ -56,7 +56,7 @@
 		    </ol>
 
 		    <!-- Wrapper for slides -->
-		    <div class="carousel-inner" role="listbox">
+		    <div class="carousel-inner carousel-small" role="listbox">
 		      <div class="item active">
 		        <img src="img/Stargazing.png" alt="stargazing" width="970" height="280">
 		      </div>
@@ -86,7 +86,13 @@
 		  </div>
 		</div>
 
-		
+
+		<!-- STATIC IMAGES -->
+		<div class="articleImages">
+			<img class="hide" id="shootingStarImg" src="img/shootingstar.png" alt="shooting star" width="970" height="280">
+			<img class="hide" id="sunImg" src="img/sun.png" alt="sun" width="970" height="280">
+			<img class="hide" id="eclipseImg" src="img/eclipse.png" alt="eclipse" width="970" height="280">
+		</div>
 
 
 
