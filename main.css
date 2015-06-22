@@ -5,7 +5,7 @@ body {
 }
 
 .container-fluid {
-	/*background-image: url(img/space.jpg);	*/
+	background-image: url(img/space.jpg);	
 	
 }
 
@@ -19,8 +19,6 @@ body {
 /*********ASTRONOMY FOR KIDS***********/
 
 .navbar-brand {
-	border: 1px solid white;
-
 	font-family: serif;
 	font-size: 2rem;
 	font-style: italic;
@@ -37,25 +35,22 @@ a:first-letter {
 	font-size: 150%;
 }
 
+/**********IMG'S***********/
 
-/*******HIDE ARTICLES********/
-
-.articles {
-	display: none;
+div img {
+	
 }
 
-/*********SHOW ARTICLES*********/
-.showArticle {
+/*********ARTICLES*********/
+
+.article {
 	color: gainsboro;	
 	text-align: center;
 	padding: 0 25px;
 	max-width: 500px;
-
 }
 
-#test {
 
-}
 
 /******BOXES AROUND ARTICLES*******/
 
@@ -63,7 +58,8 @@ a:first-letter {
 	background-color: rgba(240, 248, 255, .10);
 	box-shadow: 0px 2px 96px rgba(240, 248, 255, .25) inset; 
 	color: white;
-	margin: .25rem;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	padding: 10px 25px;
 
 
@@ -73,25 +69,33 @@ a:first-letter {
 	background-color: rgba(240, 248, 255, .10);
 	box-shadow: 0px 2px 96px rgba(240, 248, 255, .25) inset; 
 	color: white;
-	margin: .25rem;
+	
 	padding: 10px 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
 }
 
 #three {
 	background-color: rgba(240, 248, 255, .10);
 	box-shadow: 0px 2px 96px rgba(240, 248, 255, .25) inset;
 	color: white; 
-	margin: .25rem;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	padding: 10px 25px;
 }
 
+.container-carousel {
+  	display: none;
+}
 
 /*********CAROUSEL OF IMAGES*********/
 
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 768px) {
+
 .container-carousel {
-  	display: none;
-	}
+	display: inline;
 }
 
 .carousel-inner {
@@ -99,8 +103,11 @@ a:first-letter {
 	height: 20em;
 }
 
+div img {
+	display: none;
+}
 
 
-
+}
 
 
