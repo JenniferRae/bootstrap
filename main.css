@@ -6,17 +6,18 @@ body {
 
 }
 
-
+img {
+	background-position: center center;
+	max-width: 250px;
+}
 
 .container-fluid {
 	background-image: url(img/space.jpg);	
-	
 }
 
 .navbar-toggle{
 	color: white;
 }
-
 
 
 /*********ASTRONOMY FOR KIDS***********/
@@ -54,30 +55,23 @@ a:first-letter {
 	background-color: rgba(240, 248, 255, .10);
 	box-shadow: 0px 2px 96px rgba(240, 248, 255, .25) inset; 
 	color: white;
-	margin-top: 25px;
-	margin-bottom: 25px;
 	padding: 10px 25px;
-
-
+	margin: 25px auto;
 }
 
 #two {
 	background-color: rgba(240, 248, 255, .10);
 	box-shadow: 0px 2px 96px rgba(240, 248, 255, .25) inset; 
 	color: white;
-	
+	margin: 25px auto;
 	padding: 10px 25px;
-	margin-top: 25px;
-	margin-bottom: 25px;
-
 }
 
 #three {
 	background-color: rgba(240, 248, 255, .10);
 	box-shadow: 0px 2px 96px rgba(240, 248, 255, .25) inset;
 	color: white; 
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin: 25px auto;
 	padding: 10px 25px;
 }
 
@@ -95,9 +89,10 @@ a:first-letter {
 
 
 
+
 /*********CAROUSEL OF IMAGES-SM SCREEN*********/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 
 .container-carousel {
 	display: inline;
@@ -108,11 +103,15 @@ a:first-letter {
 
 
 /************MD SCREEN*************/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 950px) {
+
 .container-carousel {
 	display: none;
 }
 
+#top {
+	display: none;
+}
 
 
 
