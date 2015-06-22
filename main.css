@@ -1,20 +1,23 @@
 /*********BACKGROUND PICS************/
 
 body {
+
 	background-image: url(img/space.jpg);
+
 }
+
+
 
 .container-fluid {
 	background-image: url(img/space.jpg);	
 	
 }
 
-
-
-
 .navbar-toggle{
 	color: white;
 }
+
+
 
 /*********ASTRONOMY FOR KIDS***********/
 
@@ -35,41 +38,14 @@ a:first-letter {
 	font-size: 150%;
 }
 
-/**********IMG'S***********/
-/*PLAY WITH THIS*/
-
-/*div img {
-	
-}
-
-********ARTICLES********
-
-.article {*/
-
-
-
-
-
-
-
-
-
-
-/*******HIDE ARTICLES********/
-
-/*.articles {
-	display: none;
-}*/
 
 /*********SHOW ARTICLES*********/
 .showArticle {
-	display: inline; /*PLAY WITH THIS*/
 	color: gainsboro;	
 	text-align: center;
 	padding: 0 25px;
 	max-width: 500px;
 }
-
 
 
 /******BOXES AROUND ARTICLES*******/
@@ -105,41 +81,40 @@ a:first-letter {
 	padding: 10px 25px;
 }
 
-.container-carousel {
+.articleImages {
   	display: none;
 }
 
-/*********CAROUSEL OF IMAGES*********/
-
-/**FIX THIS**/
-
-/*@media screen and (min-width: 768px) {
-
-.container-carousel {
-	display: inline;
-
-@media screen and (max-width: 768px) {
 .container-carousel, .articleImages {
   	display: none;
 	}
-*/
-}
 
-.hide {
-	display: none;
-}
-
-/*WORK ON THIS*/
-/*div img {
-	display: none;
-}
-
-
-}
-
-******************************
 .show {
 	display: inline;
-}*/
+}
 
 
+
+/*********CAROUSEL OF IMAGES-SM SCREEN*********/
+
+@media screen and (min-width: 600px) {
+
+.container-carousel {
+	display: inline;
+}
+
+
+}
+
+
+/************MD SCREEN*************/
+@media screen and (min-width: 992px) {
+.container-carousel {
+	display: none;
+}
+
+
+
+
+
+}
