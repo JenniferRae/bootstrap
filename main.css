@@ -36,14 +36,34 @@ a:first-letter {
 }
 
 /**********IMG'S***********/
+/*PLAY WITH THIS*/
 
-div img {
+/*div img {
 	
 }
 
-/*********ARTICLES*********/
+********ARTICLES********
 
-.article {
+.article {*/
+
+
+
+
+
+
+
+
+
+
+/*******HIDE ARTICLES********/
+
+/*.articles {
+	display: none;
+}*/
+
+/*********SHOW ARTICLES*********/
+.showArticle {
+	display: inline; /*PLAY WITH THIS*/
 	color: gainsboro;	
 	text-align: center;
 	padding: 0 25px;
@@ -91,23 +111,35 @@ div img {
 
 /*********CAROUSEL OF IMAGES*********/
 
+/**FIX THIS**/
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
 
 .container-carousel {
 	display: inline;
+
+@media screen and (max-width: 768px) {
+.container-carousel, .articleImages {
+  	display: none;
+	}
+*/
 }
 
-.carousel-inner {
-	width: 100%;
-	height: 20em;
+.hide {
+	display: none;
 }
 
-div img {
+/*WORK ON THIS*/
+/*div img {
 	display: none;
 }
 
 
 }
+
+******************************
+.show {
+	display: inline;
+}*/
 
 

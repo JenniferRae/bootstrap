@@ -31,9 +31,9 @@
 				<div class="collapse navbar-collapse" id="myNavbar">
 						<!-- SELF NOTE: HAD TO DELETE  class="hidden"-->
 					<ul class="nav navbar-nav">
-						<li id="starsArticle"><a href="#one">Stars</a></li>
-						<li><a href="#two">Sun</a></li>
-						<li><a href="#three">Eclipse of the Sun</a></li>
+						<li><a href="#one" id="starsArticle">Stars</a></li>
+						<li><a href="#two" id="sunArticle">Sun</a></li>
+						<li><a href="#three" id="eclipseArticle">Eclipse of the Sun</a></li>
 					</ul>
 
 
@@ -56,7 +56,7 @@
 		    </ol>
 
 		    <!-- Wrapper for slides -->
-		    <div class="carousel-inner" role="listbox">
+		    <div class="carousel-inner carousel-small" role="listbox">
 		      <div class="item active">
 		        <img src="img/Stargazing.png" alt="stargazing" width="970" height="280">
 		      </div>
@@ -86,7 +86,13 @@
 		  </div>
 		</div>
 
-		
+
+		<!-- STATIC IMAGES -->
+		<div class="articleImages">
+			<img class="hide" id="shootingStarImg" src="img/shootingstar.png" alt="shooting star" width="970" height="280">
+			<img class="hide" id="sunImg" src="img/sun.png" alt="sun" width="970" height="280">
+			<img class="hide" id="eclipseImg" src="img/eclipse.png" alt="eclipse" width="970" height="280">
+		</div>
 
 
 
@@ -95,8 +101,10 @@
 		<section class="articles">
 
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<article id="one">
+
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<article id="one" class="hide">
+
 						<header>
 						<img src="img/shootingstar.png" alt="sun" height="150" width="300">
 							<h2>Stars</h2>
@@ -111,10 +119,11 @@
 						
 					</article>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					
-					<article id="two">
-						<img src="img/sun.png" alt="sun" height="150" width="300">
+
+
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<article id="two" class="hide">
+					<img src="img/sun.png" alt="sun" height="150" width="300">
 						<header>
 							<h2>Sun</h2>
 						</header>
@@ -128,8 +137,9 @@
 						</footer>
 					</article>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<article id="three">
+
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<article id="three" class="hide">
 						<img src="img/eclipse.png" alt="sun" height="150" width="300">
 						<header>
 							<h2>Eclipse of the Sun</h2>
