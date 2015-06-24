@@ -104,9 +104,13 @@ a:first-letter {
 
 }
 
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
 
 /************MD SCREEN*************/
 @media screen and (min-width: 970px) {
+
 
 
 
