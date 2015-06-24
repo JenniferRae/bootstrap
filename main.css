@@ -108,15 +108,11 @@ a:first-letter {
 /************MD SCREEN*************/
 @media screen and (min-width: 950px) {
 
-/*.container-carousel {
-	display: none;
-}*/
-
 #top {
 	display: none;
+	}
+
+
+	
 }
 
-
-
-
-}
