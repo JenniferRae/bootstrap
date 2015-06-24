@@ -12,8 +12,11 @@ img {
 }
 
 .container-fluid {
-	background-image: url(img/space.jpg);	
+	background-image: url(img/space.jpg);
+		
 }
+
+
 
 .navbar-toggle{
 	color: white;
@@ -103,15 +106,10 @@ a:first-letter {
 
 
 /************MD SCREEN*************/
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 970px) {
 
-.container-carousel {
-	display: none;
-}
 
-#top {
-	display: none;
-}
+
 
 
 
